@@ -1,0 +1,5 @@
+config.php: The main file for holding the information related to the admin MySQL table. We shall discuss in brief how to create the table. For information do check the MySQL posts.
+admin.php: For administrative functions. It will redirect to login.php if not authorized already;
+login.php: A webpage for displaying form of login. It will submit the form to check_login.php where it will be processed further;
+check_login.php: A PHP script to check the login details from the MySQL Table. If successfully matched, then it will register the Session, else will redirect back to the login.php file with error message;
+logout.php: It will delete the session, and will redirect back to login.php file with success message;

@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.heading{
+	width: 100%;
+	line-height: 80px;
+	font-size: 1.4rem;
+	background: lightgray;
+	font-family: 'Staatliches', cursive;
+}
+#welcome-text{
+    color: white;
+    font-size: 20px;
+}
+footer{
+	padding: 20px;
+    margin-top: 20px;
+    color: #F3EAF2;
+    background-color: #09082E;
+    text-align: center;
+}
+
+form{
+	width: 400px;
+
+}

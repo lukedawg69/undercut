@@ -1,0 +1,254 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: #651964;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #F3EAF2;
+}
+
+.dark {
+    padding: 15px;
+    background: #09082E;
+    color: #F3EAF2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Header + Nav*/
+
+header {
+    background: #09082E;
+    color: #F3EAF2;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #651964 3px solid;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header .highlight,
+header .current a {
+    color: #651964;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+nav .current a {
+    color: #651964;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: right;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: #F3EAF2;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 30px;
+    display: none;
+    width: 26px;
+    float: right;
+    line-height: 70px;
+}
+
+#toggle {
+    display: none;
+}
+
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    background: url('../images-from-web/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #F3EAF2;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 15px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+
+/* Sidebar */
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+
+/* Main-col */
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+
+/* Services */
+
+#service {
+    background: url('../images-from-web/service-cover.jpg') 271px;
+    text-align: center;
+    height: 70vh;
+}
+
+#serive .box1#box1-text {
+    border: 1px solid black;
+}
+
+/* Contact */
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #F3EAF2;
+    background-color: #651964;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    header #branding,
+    nav,
+    nav a,
+    #service form,
+    textarea #message,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #e6e6e6;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+    #service form input[type="Email"],
+    .message input,
+    .message textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 50%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-left: 25%;
+    margin-right: 25%;
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=submit] {
+    width: 50%; 
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+
+}
